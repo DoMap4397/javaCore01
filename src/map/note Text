@@ -1,0 +1,17 @@
+Map sử dụng để lưu trữ dữu liệu dạng khóa (key) và giá trị (value).
+Mỗi cặp key và value được gọi là một entry.
+
+Map chỉ chứa các giá trị key duy nhất, không trùng lập key.
+
+HashMap: Không đảm bảo về thứ tự entry được thêm vào.
+
+LinkedHashMap: Đảm bảo thứ tự các entry được thêm vào.
+
+TreeMap: Duy trì thứ các phần tử dựa vào bộ so sánh Comparator.
+
+Entry là một interface của Map. Vì vậy có thể truy cập bằng tên Map.Entry; Cung cấp các truy suất các key và value.
+vd:
+public interface Map<K, V> {
+    interface Entry<K, V> {
+    }
+}
